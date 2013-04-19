@@ -1,1 +1,19 @@
 This is a test
+
+Proxy Fix:
+$ git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:8080
+$ git config --system http.sslcainfo /bin/curl-ca-bundle.crt
+$ git remote add origin https://mygithubuser:mygithubpwd@github.com/repoUser/repoName.git
+$ git push origin master
+
+proxyuser= the proxy user I was assigned by our IT dept, in my case it is the same windows user I use to log in to my PC, the Active Directory user
+
+proxypwd= the password of my proxy user proxy.server.com:8080 = the proxy name and port, I got it from Control Panel, Internet Options, Connections, Lan Settings button, Advanced button inside the Proxy Server section, use the servername and port on the first (http) row.
+
+mygithubuser = the user I use to log in to github.com
+
+mygithubpwd = the password for my github.com user
+
+repoUser = the user owner of the repo
+
+repoName = the name of the repo
