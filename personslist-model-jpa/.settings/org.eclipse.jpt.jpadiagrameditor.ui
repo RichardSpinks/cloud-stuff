@@ -1,0 +1,9 @@
+#This file contains JPA Diagram Editor settings
+#Thu Sep 05 14:39:09 EST 2013
+defaultTableNamePrefix=T_
+directEditAffectsClass=true
+accessType=field
+diagramFolder=diagrams
+collectionType=collection
+oneToManyOldStyle=false
+defaultPackage=com.sap.hana.cloud.sample
